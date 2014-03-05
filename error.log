@@ -1,0 +1,4 @@
+2014/02/26 17:52:57 [error] 8528#0: *1 directory index of "/var/www/laravel/" is forbidden, client: 127.0.0.1, server: lar.org, request: "GET / HTTP/1.1", host: "lar.org"
+2014/02/26 17:52:58 [error] 8528#0: *1 directory index of "/var/www/laravel/" is forbidden, client: 127.0.0.1, server: lar.org, request: "GET / HTTP/1.1", host: "lar.org"
+2014/02/26 17:52:59 [error] 8528#0: *1 directory index of "/var/www/laravel/" is forbidden, client: 127.0.0.1, server: lar.org, request: "GET / HTTP/1.1", host: "lar.org"
+2014/03/04 17:33:07 [error] 2166#0: *497 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /var/www/laravel/app/controllers/SignupController.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: lar.org, request: "GET /register HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "lar.org"
