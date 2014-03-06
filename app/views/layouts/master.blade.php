@@ -4,9 +4,10 @@
         @include('includes.head')
     </head>
     <body>
-
-        @yield('content')
-
+        @include('includes.header')
+        <div class="maincontainer">
+            {{$content}}
+        </div>
         <footer class="row">
             @include('includes.footer')
         </footer>

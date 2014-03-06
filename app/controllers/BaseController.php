@@ -21,15 +21,8 @@ class BaseController extends Controller {
             $this->layout->static_url = Config::get('app.statuc_url');
             $this->layout->static_version = Config::get('app.static_version');
             $this->layout->meta = array();
-            $this->layout->headercss = array(
-                    'bootstrap.min.css',
-                    'bootstrap-responsive.min',
-                    'base-admin-3.css',
-                    'base-admin-3-responsive.css',
-                    'font-awesome.min.css',
-                    'dashboard.css',
-                );
-            $this->layout->headerjs = array();
+            $this->layout->headercss = array('../min/g=maincss');
+            $this->layout->headerjs = array('../min/g=mainjs');
             $this->layout->footerjs = array();
             $this->layout->page_title = Config::get('app.site_title');
 	    $this->layout->meta_desc = Config::get('app.site_desc');

@@ -33,7 +33,6 @@ require __DIR__.'/../bootstrap/autoload.php';
 */
 
 $app = require_once __DIR__.'/../bootstrap/start.php';
-echo 'Hellos su'; exit;
 /*
 |--------------------------------------------------------------------------
 | Run The Application
@@ -47,4 +46,3 @@ echo 'Hellos su'; exit;
 */
 
 $app->run();
-echo 'Hellos su'; exit;

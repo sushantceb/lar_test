@@ -4,6 +4,8 @@
 	<title>{{$page_title}}</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1" />
+        <meta name="viewport" content="width=device-width">
+
         @foreach($meta as $p)
             <meta name="{{$p[name]}}" content="{{$p[content]}}" />
         @endforeach

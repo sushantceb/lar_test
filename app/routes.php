@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function() {
+/*Route::get('/', function() {
 	return View::make('hello');
 });
+ *
+ */
 
+Route::match(array('GET', 'POST'), '/', 'HomeController@index');
 Route::match(array('GET', 'POST'), '/register', 'SignupController@signup');
 
 #Route::get('/register/{error?}', 'RegisterController@signup');
