@@ -7,6 +7,8 @@ class BaseController extends Controller {
 	 *
 	 * @return void
 	 */
+        protected $layout = 'layouts.master';   
+
 	protected function setupLayout()
 	{
 		if ( ! is_null($this->layout))
@@ -14,5 +16,26 @@ class BaseController extends Controller {
 			$this->layout = View::make($this->layout);
 		}
 	}
+        
+        public function makeView($view, $data=array()) {
+            $this->layout->static_url = Config::get('app.statuc_url');
+            $this->layout->static_version = Config::get('app.static_version');
+            $this->layout->meta = array();
+            $this->layout->headercss = array(
+                    'bootstrap.min.css',
+                    'bootstrap-responsive.min',
+                    'base-admin-3.css',
+                    'base-admin-3-responsive.css',
+                    'font-awesome.min.css',
+                    'dashboard.css',
+                );
+            $this->layout->headerjs = array();
+            $this->layout->footerjs = array();
+            $this->layout->page_title = Config::get('app.site_title');
+	    $this->layout->meta_desc = Config::get('app.site_desc');
+            
+            $this->layout->content = View::make($view);
+            return $this->layout;
+        }
 
 }

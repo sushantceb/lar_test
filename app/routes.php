@@ -15,6 +15,6 @@ Route::get('/', function() {
 	return View::make('hello');
 });
 
-#Route::match(array('GET', 'POST'), '/register', 'SignupController@signup');
+Route::match(array('GET', 'POST'), '/register', 'SignupController@signup');
 
 #Route::get('/register/{error?}', 'RegisterController@signup');
