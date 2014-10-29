@@ -16,7 +16,8 @@ $min_enableBuilder = true;
  * If non-empty, the Builder will be protected with HTTP Digest auth.
  * The username is "admin".
  */
-$min_builderPassword = 'admin';
+//$min_builderPassword = 'admin';
+$min_builderPassword = '';
 
 
 /**
@@ -71,7 +72,7 @@ $min_allowDebugFlag = false;
  * second line. The third line might work on some Apache servers.
  */
 $min_documentRoot = '';
-//$min_documentRoot = substr(__FILE__, 0, -15);
+$min_documentRoot = substr(__FILE__, 0, -15);
 //$min_documentRoot = $_SERVER['SUBDOMAIN_DOCUMENT_ROOT'];
 
 

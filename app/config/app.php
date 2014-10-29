@@ -174,9 +174,10 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
 	),
+    //'static_url' => 'laravel.net',
     'static_url' => '',
     'static_version' => 102,
-    'site_title' => 'Site Title',
+    'site_title' => 'Sushant\'s Site',
     'site_desc' => 'Site Desc',
 
 );
